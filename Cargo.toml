@@ -3,4 +3,10 @@ name = "rust_app"
 version = "0.1.0"
 edition = "2021"
 
+[dependencies]
+axum = "0.6.18"
+dioxus = "0.3.2"
+dioxus-liveview = { version = "0.3.0", features = ["axum"] }
+tokio = { version = "1.28.2", features = ["full"] }
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
