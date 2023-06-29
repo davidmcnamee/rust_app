@@ -1,0 +1,15 @@
+load("@rules_rust//rust:defs.bzl", "rust_binary")
+
+rust_binary(
+    name = "src",
+    srcs = [
+        "main.rs",
+    ],
+    edition = "2021",
+    deps = [
+        "//src/app",
+        "@crate_index//:axum",
+        "@crate_index//:dioxus-liveview",
+        "@crate_index//:tokio",
+    ],
+)
