@@ -1,6 +1,4 @@
-mod app;
-
-use app::app::app;
+use src_app::app;
 use axum::extract::WebSocketUpgrade;
 use axum::response::Html;
 use axum::routing::get;

@@ -1,0 +1,14 @@
+{
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "cmd": "bazel run @rules_rust//tools/rust_analyzer:gen_rust_project",
+                "match": "BUILD\\.bazel",
+            },
+            {
+                "cmd": "ps aux | grep server/rust-analyzer$ | awk '{ print $2 }' | xargs kill -9",
+                "match": "BUILD\\.bazel",
+            }
+        ]
+    }
+}

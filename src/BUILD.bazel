@@ -5,7 +5,6 @@ rust_binary(
     srcs = [
         "main.rs",
     ],
-    edition = "2021",
     deps = [
         "//src/app",
         "@crate_index//:axum",

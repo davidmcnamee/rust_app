@@ -2,11 +2,10 @@ load("@rules_rust//rust:defs.bzl", "rust_library")
 
 rust_library(
     name = "app",
+    crate_name = "src_app",
     srcs = [
         "app.rs",
-        "mod.rs",
     ],
-    edition = "2021",
     visibility = ["//visibility:public"],
     deps = [
         "@crate_index//:dioxus",
